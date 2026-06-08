@@ -1,0 +1,246 @@
+:root {
+  --warna-gelap: #0d0d1a;
+  --warna-bagian: #1a1a2e;
+  --warna-ungu: #915aea;
+  --warna-ungu-terang: #9d5cff;
+  --warna-oranye: #f5a623;
+  --warna-kuning-kureng: #85632e;
+  --warna-putih: #ffffff;
+  --warna-abu: #b3b3b3;
+  --font-judul: 'Grandstander', cursive;
+  --font-badan: 'Poppins', sans-serif;
+  --lebar-maks: 1200px;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sorotan-ungu{
+    color: var(--warna-ungu)
+}
+
+body {
+  font-family: var(--font-badan);
+  background-color: var(--warna-gelap);
+  color: var(--warna-putih);
+  line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-badan);
+  background-color: var(--warna-gelap);
+  color: var(--warna-putih);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--warna-putih);
+}
+
+ul {
+  list-style: none;
+}
+
+.wadah {
+  max-width: var(--lebar-maks);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* NAVIGASI */
+.navigasi {
+  background-color: var(--warna-gelap);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--warna-oranye);
+}
+
+.navigasi-wadah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--lebar-maks);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navigasi-logo {
+  font-family: var(--font-judul);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--warna-oranye);
+}
+
+.navigasi-menu {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.navigasi-menu a {
+  font-size: 0.9rem;
+  color: var(--warna-abu);
+  transition: color 0.3s;
+}
+
+.navigasi-menu a:hover,
+.navigasi-menu a.aktif {
+  color: var(--warna-putih);
+}
+
+.navigasi-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--warna-putih);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .navigasi-hamburger {
+    display: block;
+  }
+
+  .navigasi-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--warna-bagian);
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .navigasi-menu.tampil {
+    display: flex;
+  }
+
+  .navigasi {
+    position: relative;
+  }
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+  padding: 60px 0 0;
+  background-color: var(--warna-bagian);
+  border-top: 1px solid rgba(123, 47, 247, 0.2);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-logo {
+  font-family: var(--font-judul);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-desc {
+  color: var(--warna-abu);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.footer-sosial {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-sosial a {
+  color: var(--warna-putih);
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer-sosial a:hover {
+  color: var(--warna-oranye);
+}
+
+.footer-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-heading-mt {
+  margin-top: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links li,
+.footer-links a {
+  color: var(--warna-abu);
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--warna-putih);
+}
+
+.footer-info {
+  color: var(--warna-abu);
+  font-size: 0.85rem;
+}
+
+.footer-info a {
+  color: var(--warna-abu);
+  transition: color 0.3s;
+}
+
+.footer-info a:hover {
+  color: var(--warna-putih);
+}
+
+.footer-bawah {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+.footer-teks {
+  color: var(--warna-abu);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,208 @@
+:root{
+--warna-ungu: #915aea;
+--warna-oranye: #f5a623;
+}
+.navigasi-logo{
+  color: var(--warna-oranye);
+
+}
+
+.sorotan-ungu{
+    color: var(--warna-ungu)
+}
+
+.atas{
+    height: 500px;
+    background: url("../assets/about-us/ghiblibakteri.jpg") center/cover;
+    position: relative;
+}
+
+.atas::before{
+    content:"";
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 15, 33, 0.433);
+}
+
+
+.atasan{
+    position: relative;
+    z-index: 2;
+
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}   
+
+
+.atasan p{
+    width: 500px;
+    color: #ffc936;
+}
+
+
+
+.kontak{
+    padding: 60px 8%;
+}
+
+.kontaklagi{
+    display:flex;
+    gap:40px;
+    margin-top: 70px;
+    margin-bottom:150px;
+}
+
+.formbox{
+    flex: 2;
+}
+
+.input{
+    display: flex;
+    gap: 15px;
+}
+
+input,
+textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+
+    background: #7e4eb9;
+    color: rgb(255, 255, 255);
+
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+input,
+textarea{
+    color: rgb(190, 190, 190);
+}
+
+input::placeholder,
+textarea::placeholder{
+color: rgb(190, 190, 190);
+}
+
+textarea{
+    height: 180px;
+    resize: none;
+}
+
+.formbox button{
+    background: #ffbb1d;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formbox button:hover{
+    background: #c27201;
+    transform: scale(1.05);
+}
+
+
+
+.ratingbox{
+    flex:1;
+    background: #733ab8;
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+}
+
+.ratingbox h1{
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ratingbox p{
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #c5c5c5;
+}
+
+.stars{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #e7d364;
+    transition: 0.3s;
+}
+
+.stars:hover{
+    transform: translateY(-10px);
+}
+
+.ratingbox button{
+    background: #ffbb1d;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ratingbox button:hover{
+    background: #c27201;
+    transform: scale(1.05);
+}
+
+
+
+.kotakinfo{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+    margin-bottom: 50px;
+}
+
+.kotak{
+    background: #842fec;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.kotakinfo h2{
+    margin-bottom: 20px;
+}
+
+.kotak p{
+    font-size: 15px;
+    color: rgb(177, 177, 177);
+}
+
+
+
+.penutup{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    border-radius:5px;
+    position:relative;
+}
+
+.penutup video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.penutup::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(119, 33, 166, 0.4);
+    z-index:1;
+}
+
+.penutup-text{
+    z-index:2;
+}

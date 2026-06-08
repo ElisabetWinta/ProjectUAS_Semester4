@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/uas-contact-us.css">
+</head>
+
+<body>
+
+  <!-- NAVIGASI -->
+    <nav class="navigasi">
+        <div class="navigasi-wadah">
+        <a href="/" class="navigasi-logo">M<span class="sorotan-ungu">AS</span>K<span class="sorotan-ungu">O</span>T<span class="sorotan-ungu">IF</span>Y</a>
+        <ul class="navigasi-menu" id="navMenu">
+            <li><a href="index.html" class="aktif">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="success-stories.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <button class="navigasi-hamburger" id="navToggle" aria-label="Toggle menu">
+            <span class="material-icons">menu</span>
+        </button>
+        </div>
+    </nav>
+
+    <section class="atas">
+        <div class="atasan">
+            <h1>Contact Us</h1>
+            <p>
+                Bring your ideas to life with custom mascot
+                design and production created for brands,
+                events, and communities.
+            </p>
+        </div>
+    </section>
+
+
+<section class="kontak">
+    <div class="kontaklagi">
+        <div class="formbox">
+            <div class="input">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Phone">
+            </div>
+            <input type="text" placeholder="Name">
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
+        </div>
+        <div class="ratingbox">
+            <h1>Rate Us!</h1>
+            <p>
+                Your opinion matters to us. Please take a moment to rate our mascot and let us know how effectively it brings our brand and ideas to life.
+            </p>
+            <div class="stars">
+                ☆ ☆ ☆ ☆ ☆
+            </div>
+            <button>Submit Button</button>
+        </div>
+    </div>
+
+
+    <div class="kotakinfo">
+        <div class="kotak">
+            <h2>+62-123-456</h2>
+            <p>
+                Stay connected with us. Contact us through our phone number for inquiries, collaborations, and further information.
+            </p>
+        </div>
+        <div class="kotak">
+            <h2>@mascotify.ofc</h2>
+            <p>
+                Let's bring ideas to life together. Contact us through our Instagram for inquiries, feedback, or collaboration opportunities.
+            </p>
+        </div>
+        <div class="kotak">
+            <h2>mascotifycorp@gmail.com</h2>
+            <p>
+                We'd love to hear from you! Reach out anytime through our contact details below and let's stay connected.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="penutup">
+    <video autoplay muted loop playsinline>
+        <source src="./assets/about-us/videoonloop.mp4" type="video/mp4">
+    </video>
+</section>
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wadah">
+      <div class="footer-grid">
+        <div class="footer-kolom">
+          <h3 class="footer-logo">MASKOTIFY</h3>
+          <p class="footer-desc">Jasa pembuatan maskot untuk menciptakan identitas brand yang kuat bagi customer.</p>
+           <div class="footer-social">
+            <span><i class="fi-brands-instagram"></i></span>
+            <span><i class="fi-brands-facebook"></i></span>
+            <span><i class="fi-brands-whatsapp"></i></span>
+            <span><i class="fi-brands-twitter"></i></span>
+            </div>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="success-stories.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-heading">Email</h4>
+          <p class="footer-info"><a href="mailto:Maskot@gmail.com">Maskot@gmail.com</a></p>
+          <h4 class="footer-heading footer-heading-mt">Services</h4>
+          <ul class="footer-links">
+            <li>Brand-Oriented Design</li>
+            <li>Mascot Rebranding</li>
+            <li>Costume Production</li>
+          </ul>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-heading">Phone</h4>
+          <p class="footer-info">+627 5471 9999</p>
+        </div>
+      </div>
+      <div class="footer-bawah">
+        <p class="footer-teks">&copy; 2026. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Hamburger Menu -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('tampil');
+    });
+  </script>
+
+
+</body>
