@@ -364,7 +364,7 @@ img {
 .bagian-kutipan {
   margin-top: 50px;
   padding: 70px 0;
-  background-color:#1b1324;
+  background-color:#2A1C3C
 }
 
 .kutipan-card {
@@ -452,17 +452,17 @@ img {
 
 .cta-judul {
   font-family: var(--font-judul);
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 2.80rem;
+  margin-bottom: 20px;
 }
 
 .cta-tengah {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  margin-bottom: 40px;
-  max-width: 700px;
+  gap: 30px;
+  max-width: 800px;
+  margin-bottom: -20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -474,8 +474,8 @@ img {
 }
 
 .cta-gambar-samping img {
-  width: 120px;
-  height: 120px;
+  width: 152px;
+  height: 152px;
   object-fit: contain;
 }
 
@@ -485,11 +485,12 @@ img {
 
 .cta-deskripsi {
   color: var(--warna-abu);
-  font-size: 0.95rem;
+  font-size: 0.99rem;
   margin-bottom: 24px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 .tombol-cta {
@@ -501,6 +502,7 @@ img {
   font-weight: 700;
   font-size: 0.9rem;
   transition: opacity 0.3s;
+  margin-top: 0px;
 }
 
 .tombol-cta:hover {
@@ -510,7 +512,7 @@ img {
 .galeri-bawah {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  gap: 10px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -520,21 +522,19 @@ img {
   background-color: var(--warna-bagian);
   border-radius: var(--radius);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
+  justify-content:center;
   overflow: hidden;
-  padding: 10px;
+
+}
+.galeri-item-height{
+  height: 185px;
+  width: 152px;
+  padding ;
 }
 
-.galeri-item-tengah-bawah {
-  aspect-ratio: 1;
-  background-color: var(--warna-bagian);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin-top: -20px;
+.galeri-margin{
+  margin-top: 31px;
 }
 
 .galeri-item img {
@@ -542,7 +542,16 @@ img {
   height: 100%;
   object-fit: contain;
 }
-
+.galeri-bawah .galeri-item:nth-child(2) img {
+  width: 100% !important;
+  height: 120% !important;
+  max-width: none !important;
+}
+.galeri-bawah .galeri-item:nth-child(4) img {
+  width: 150% !important;
+  height: 150% !important;
+  max-width: none !important;
+}
 .varian-satu {
   padding-top: -200px;
 }
@@ -659,7 +668,7 @@ img {
 
 .pricing-angka {
   font-family: var(--font-judul);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--warna-oranye);
 }
@@ -738,6 +747,8 @@ img {
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
   align-items: center;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 30px;
 }
 
 .invest-judul {
@@ -789,11 +800,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -50px;
+  margin-top: 30px;
+  margin-bottom: -5px;
+ 
 }
 
 .invest-gambar img {
-  max-width: 320px;
-  width: 100%;
+  width: 250px;
+  transform: scale(1.6)
+  
 }
 
 @media (max-width: 768px) {
